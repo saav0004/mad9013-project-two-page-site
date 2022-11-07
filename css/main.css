@@ -720,6 +720,10 @@ a {
   font-size: 1.2rem;
 }
 
+.blog__banner_p {
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
 @media only screen and (min-width: 45em) {
   .blog-grid {
     display: grid;
@@ -758,6 +762,10 @@ a {
     gap: 1rem;
     flex-direction: column;
   }
+
+  .blog__banner_p {
+  font-size: 1.2rem
+}
 
   .aside__div {
     position: sticky;
