@@ -112,10 +112,6 @@ body {
   padding-right: 1.5rem;
 }
 
-h2 {
-  font-size: 2.074rem;
-}
-
 h3 {
   font-size: 1.44rem;
 }
@@ -305,21 +301,43 @@ a {
 }
 
 .banner__title {
-  font-size: 2.488rem;
+  font-size: 1.728rem;
   line-height: 1.3;
   color: #fff;
   text-shadow: 0.2rem 0.3rem 0.7rem black;
 }
 
 .banner__text {
-  font-size: 1.44rem;
+  font-size: 1.2rem;
   color: #fff;
   text-shadow: 0.2rem 0.2rem 0.3rem black;
+}
+
+.split_h2 {
+  font-size: 1.728rem;
+}
+
+@media only screen and (min-width:45em) {
+  .banner__title {
+  font-size: 2.074rem;
+  }
+
+  .banner__text {
+    font-size: 1.44rem;
+  }
 }
 
 @media only screen and (min-width: 60em) {
   .banner {
     background-position: top;
+  }
+
+  .banner__text {
+    font-size: 1.728rem;
+  }
+
+  .banner__title {
+    font-size: 2.488rem;
   }
 }
 
@@ -446,6 +464,7 @@ a {
 
 .blog__cards__h2 {
   margin-bottom: 0rem;
+  font-size: 1.728rem;
 }
 
 .blog__cards__ul {
@@ -507,6 +526,8 @@ a {
   .blog__cards__ul {
     grid-template-columns: repeat(3, 4fr);
   }
+
+
 }
 
 /* BLOG CARDS END */
@@ -600,8 +621,14 @@ a {
   text-decoration: underline;
 }
 
+.blog__title {
+  font-size: 1.728rem;
+}
+
 @media only screen and (min-width: 45em) {
-  /* WORK ON */
+.blog__title {
+  font-size: 2.074rem;
+}
 }
 
 @media only screen and (min-width: 60em) {
@@ -610,6 +637,10 @@ a {
       url(../images/warhammer-blog-banner-desktop-photoshop.jpg);
     background-position: center;
     background-size: cover;
+  }
+
+  .blog__title {
+  font-size: 2.488rem;
   }
 }
 
@@ -656,11 +687,6 @@ a {
   color: #fff;
 }
 
-.aside__h3 {
-  margin-bottom: 0;
-  margin-top: 2.5rem;
-}
-
 .blog__aside__a:hover,
 .blog__aside__a:focus {
   color: var(--eerie-black);
@@ -684,15 +710,14 @@ a {
   color: var(--cadet-blue);
 }
 
-.article_h2::after {
-  display: block;
-  content: "";
-  width: 6%;
-  height: 0.1rem;
-  background: var(--lapis-lazuli);
-  bottom: 0;
-  position: relative;
-  left: -1rem;
+.aside__title {
+    font-size: 1.44rem;
+  }
+
+  .aside__h3 {
+  margin-bottom: 0.2rem;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 45em) {
@@ -713,6 +738,10 @@ a {
   .aside__div {
     position: sticky;
     top: 1rem;
+  }
+
+  .aside__h3 {
+    font-size: 1.2rem;
   }
 }
 
@@ -750,6 +779,11 @@ a {
   .aside__div > p {
     padding-bottom: 1rem;
   }
+  
+  .aside__h3 {
+    font-size: 1.44rem;
+  }
+
 }
 
 /* BLOG POST PAGE CONTENT END */
