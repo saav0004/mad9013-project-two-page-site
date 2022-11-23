@@ -124,6 +124,14 @@ a {
   text-decoration: none;
 }
 
+/* ---------- prof comment ----------
+
+there is no need to repeat the container styles at multiple
+media queries. These styles are set up to be responsive by
+default without needing media queries.
+
+---------- end prof comment ---------- */
+
 @media only screen and (min-width: 45em) {
   .container {
     width: min(65em, 100%);
@@ -353,6 +361,11 @@ a {
 }
 
 .cards__li {
+  /* ---------- prof comment ----------
+  
+  No `px`!
+  
+  ---------- end prof comment ---------- */
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -462,6 +475,17 @@ a {
 
 /* BLOG CARDS STYLES  */
 
+/* ---------- prof comment ----------
+
+Avoid using tags in your classnames. This makes your classes inflexible.
+`.blog__cards__h2` suggests it can only be used on an `h2`, but what if it
+makes more sense to use a different heading in that location in a certain context?
+Something like `.blog__cards__title` is more flexible.
+
+Take the time to review your class names and see what else could be updated.
+
+---------- end prof comment ---------- */
+
 .blog__cards__h2 {
   margin-bottom: 0rem;
   font-size: 1.728rem;
@@ -489,6 +513,12 @@ a {
 .blog__cards__li:hover {
   opacity: 100%;
   transition: 0.3s;
+  /* ---------- prof comment ----------
+  
+  Don't put `cursor: pointer` on elements that are not actually clickable!
+  The anchor is the clickable element, not the li
+  
+  ---------- end prof comment ---------- */
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem #0004, 0 0.5rem 1rem #0004;
   transform: translateY(-0.2rem);

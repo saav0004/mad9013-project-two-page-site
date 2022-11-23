@@ -28,9 +28,16 @@
             alt="Adventure cooperative logo"
           />
         </a>
+        <!-- prof comment
+          missing <nav>
+        -->
         <ul class="logo__ul">
           <li class="logo__li">
             <a class="logo__a" href="./index.html">
+              <!-- prof comment
+                <p> should be removed. The <li> is the proper semantic tag for the text,
+                <p> is not necessary. Applies to all lists with simple, one line content
+              -->
               <p class="logo__p">About</p>
             </a>
           </li>
@@ -53,6 +60,10 @@
       </div>
     </header>
 
+
+    <!-- prof comment
+      missing opening <main>
+    -->
     <!-- Banner -->
 
     <section class="banner">
@@ -79,8 +90,14 @@
                 src="./images/card-character.svg"
                 alt="Create a character card"
               />
+              <!-- prof comment
+                should be h2
+              -->
               <h3>Create a character</h3>
               <p>Get started with your very first character.</p>
+              <!-- prof comment
+                this <p> is fine as a child of <li> because there is complex content in the list
+              -->
             </a>
           </li>
           <li class="cards__li">
@@ -90,6 +107,9 @@
                 src="./images/card-party.svg"
                 alt="Form a party card"
               />
+              <!-- prof comment
+                should be h2
+              -->
               <h3>Form a party!</h3>
               <p>Connect with friends and team up.</p>
             </a>
@@ -101,6 +121,9 @@
                 src="./images/card-items.svg"
                 alt="Find an item card"
               />
+              <!-- prof comment
+                should be h2
+              -->
               <h3>Find an item!</h3>
               <p>Add fantastic items to boost your character.</p>
             </a>
@@ -173,6 +196,10 @@
       </div>
     </section>
     <!-- 2ND CARD END -->
+
+    <!-- prof comment
+      missing closing </main>
+    -->
 
     <!-- FOOTER START -->
     <footer class="footer">
